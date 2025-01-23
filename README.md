@@ -1,3 +1,7 @@
+# Rides app
+
+This is designed for mobile, look at it here: https://rides-omega.vercel.app/
+
 # Nuxt Minimal Starter
 
 Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
