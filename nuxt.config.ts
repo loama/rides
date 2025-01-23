@@ -8,5 +8,17 @@ export default defineNuxtConfig({
       supabaseUrl: process.env.NUXT_SUPABASE_URL,
       supabaseKey: process.env.NUXT_SUPABASE_KEY
     }
+  },
+  app: {
+    head: {
+      viewport: 'width=device-width, initial-scale=1.0, viewport-fit=cover',
+      meta: [
+        // Add other meta tags here
+      ],
+      link: [
+        // Add link tags here
+      ],
+      title: 'Rides | Car Community'
+    }
   }
 })

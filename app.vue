@@ -1,13 +1,15 @@
 <template>
   <div>
-    <div class="bg-red-500">a</div>
-    <div class="bg-blue-500">{{ storePosts.posts }}</div>
-    <div class="bg-green-500">{{ storeUsers.users }}</div>
+    <div id="notch-cover" class="bg-blue-500 w-full fixed top-0 left-0 z-20" />
+
+    <div id="content">
+      <NuxtPage />
+    </div>
 
     <ModalsProfileMain />
     <ModalsOverlay />
 
-    <button @click="openProfileModal">Open Profile Modal</button>
+    <NavigationBar />
   </div>
 </template>
 
@@ -28,3 +30,15 @@ const openProfileModal = () => {
   router.push({ query: { modal: 'profile' } })
 }
 </script>
+
+<style lang="sass" scoped>
+#notch-cover
+  height: 0
+  height: env(safe-area-inset-top)
+
+#content
+  padding-bottom: 48px
+  padding-bottom: calc(env(safe-area-inset-bottom) + 48px)
+  padding-top: 0
+  padding-top: env(safe-area-inset-top)
+</style>

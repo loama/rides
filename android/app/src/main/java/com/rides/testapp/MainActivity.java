@@ -1,4 +1,4 @@
-package com.rides.app;
+package com.rides.testapp;
 
 import com.getcapacitor.BridgeActivity;
 
